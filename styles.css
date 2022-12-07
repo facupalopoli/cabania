@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f6f7;
+}
+
+header nav{
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    box-shadow: 1px 4px 8px #3a3a3a;
+    width: 100%;
+    position: fixed;
+}
+
+header nav a{
+    text-decoration: none;
+    color: beige;
+    font-size: 1.3em;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.hero{
+    display: flex;
+    background: linear-gradient(rgba(53, 82, 66, 0.7), rgba(47, 80, 63, 0.8)), url(./imagenes/DSC_0365.JPG);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1{
+    font-size: 3em;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.hero p{
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.cabania h2{
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration-line: overline;
+    margin-bottom: 20px;
+}
+
+.cabania{
+    margin: 50px auto 50px auto;
+    width: 75%;
+}
+
+.fotosCabania{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fotosCabania img{
+    width: 49%;
+    border-radius: 5px;
+    margin: 2px;
+    border: 5px;
+    border-color: black;
+}
+
+.cita{
+    background: linear-gradient(rgba(53, 82, 66, 0.7), rgba(47, 80, 63, 0.8)), url(./imagenes/DSC_0144.JPG);
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cita h3{
+    color: beige;
+    font-size: 1.5em;
+    padding-top: 10px;
+}
+
+.cita p{
+    color: beige;
+    font-size: 1.5em;
+    margin: 10px;
+    text-align: center;
+}
+
+.cajaCita img{
+    width: 3em;
+    background-color: beige;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.cajaCita{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.exteriores{
+    margin: 50px auto 50px auto;
+    width: 75%;
+}
+
+.exteriores h2{
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration-line: overline;
+    margin-bottom: 20px;
+}
+
+.fotosExteriores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fotosExteriores img{
+    width: 49%;
+    border-radius: 5px;
+    margin: 2px;
+    border: 5px;
+    border-color: black;
+}
+
+.testimonios h2{
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration-line: overline;
+    margin-bottom: 20px;
+}
+
+.testimonios{
+    margin: 50px auto 50px auto;
+    width: 75%;
+}
+
+.textoTestimonios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.quotes{
+    width: 30%;
+    gap: 20px;
+}
+
+q{
+    text-align: center;
+    padding-bottom: 10px;
+}
