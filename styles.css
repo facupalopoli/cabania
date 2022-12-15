@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f5f6f7;
@@ -30,7 +34,7 @@ header nav a{
     background: linear-gradient(rgba(53, 82, 66, 0.7), rgba(47, 80, 63, 0.8)), url(./imagenes/DSC_0365.JPG);
     background-size: cover;
     background-position: center;
-    height: 80vh;
+    height: 75vh;
     flex-direction: column;
     justify-content: center;
 }
@@ -51,10 +55,11 @@ header nav a{
     text-transform: uppercase;
     text-decoration-line: overline;
     margin-bottom: 20px;
+    padding-top: 50px;
 }
 
 .cabania{
-    margin: 50px auto 50px auto;
+    margin: 50px auto;
     width: 75%;
 }
 
@@ -86,21 +91,22 @@ header nav a{
 .cita h3{
     color: beige;
     font-size: 1.5em;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 .cita p{
     color: beige;
     font-size: 1.5em;
-    margin: 10px;
+    margin: 20px;
     text-align: center;
+    font-style: oblique;
 }
 
-.cajaCita img{
-    width: 3em;
+.comillas{
+    color: rgb(0, 0, 0);
     background-color: beige;
-    border-radius: 20px;
-    box-sizing: border-box;
+    font-size: 3em;
+    border-radius: 25px;
 }
 
 .cajaCita{
@@ -120,6 +126,7 @@ header nav a{
     text-transform: uppercase;
     text-decoration-line: overline;
     margin-bottom: 20px;
+    padding-top: 50px;
 }
 
 .fotosExteriores{
@@ -141,6 +148,7 @@ header nav a{
     text-transform: uppercase;
     text-decoration-line: overline;
     margin-bottom: 20px;
+    padding-top: 50px;
 }
 
 .testimonios{
@@ -155,11 +163,128 @@ header nav a{
 }
 
 .quotes{
-    width: 30%;
-    gap: 20px;
+    width: 30%; 
 }
 
-q{
+.quotes p{
+    text-align: justify;
+}
+
+h4{
+    margin-top: 10px;
+}
+
+.datos{
+    height: 550px;
+    background-color: #e6e6e6;
+    width: 75%;
+    display: flex;
+    margin: 35px auto 50px auto;
+    border-radius: 20px;
+}
+
+.datos h3{
     text-align: center;
-    padding-bottom: 10px;
+    font-size: 2em;
+    margin-top: 5px;
+}
+
+.contacto{
+    width: 50%;
+}
+
+.consultas{
+    width: 50%;
+}
+
+.formulario{    
+    display: flex;
+    justify-content: center;
+    height: 90%;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+form input{
+    width: 70%;
+    padding: 5px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 1px 4px 8px #3a3a3a;
+    margin-bottom: 5px;
+}
+
+form label{
+    font-size: 1.1em;
+    padding: 5px 0;
+}
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration-line: overline;
+    padding-top: 50px;
+}
+
+.iconos{
+    font-size: 40px;
+}
+
+.redes{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 20px;
+    justify-content: space-evenly;
+    height: 80%;
+    margin-left: 3%;
+}
+
+.redes a{
+    text-decoration: none;
+}
+
+.redes span{
+    font-size: 0.5em;
+    margin-left: 20px;
+}
+
+footer{
+    height: 150px;
+    background-color: black;
+    padding: 30px;
+}
+
+footer nav{
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    padding-bottom: 15px;
+}
+
+footer a{
+    color: beige;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+footer p{
+    color: beige;
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+footer p{
+    text-align: center;
+    margin-top: 30px;
 }

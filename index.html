@@ -5,24 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <title>Cabaña San Francisco</title>
 </head>
 <body>
     <header>
         <nav>
-            <a href="">Inicio</a>
-            <a href="">La Cabaña</a>
-            <a href="">Meliquina</a>
-            <a href="">Testimonios</a>
-            <a href="">Contacto</a>
+            <a href="#home">Inicio</a>
+            <a href="#casa">La Cabaña</a>
+            <a href="#meliquina">Meliquina</a>
+            <a href="#testimonios">Testimonios</a>
+            <a href="#contacto">Contacto</a>
         </nav>
     </header>
     <main>
-        <section class="hero">
+        <section class="hero" id="home">
             <h1>Cabaña San Francisco</h1>
             <p>Una casa de montaña enclavada en un valle de ensueño: Meliquina, Patagonia Argentina. </p>
         </section>
-        <section class="cabania">
+        <section class="cabania" id="casa">
             <h2>La cabaña</h2>
             <section class="fotosCabania">
                 <img src="./imagenes/DSC_0040.JPG" alt="imagen de cabaña">
@@ -35,13 +36,13 @@
         </section>
         <section class="cita">
             <section class="cajaCita">
-                <img src="./iconos/quote.svg" alt="icono de cita">
+                <i class="bi bi-quote comillas"></i>
                 <p>Un viaje se vive 3 veces: cuando lo soñamos, cuando lo vivimos y cuando lo recordamos.</p>
-                <img src="./iconos/quote.svg" alt="icono de cita">
+                <i class="bi bi-quote comillas"></i>
                 <h3>Anónimo</h3>
             </section>
         </section>
-        <section class="exteriores">
+        <section class="exteriores" id="meliquina">
             <h2>El pueblo</h2>
             <section class="fotosExteriores">
                 <img src="./imagenes/DSC_0040.JPG" alt="imagen de cabaña">
@@ -52,38 +53,86 @@
                 <img src="./imagenes/DSC_0371.JPG" alt="imagen de cabaña">
             </section>
         </section>
-        <section class="testimonios">
+        <section class="testimonios" id="testimonios">
             <h2>Testimonios</h2>
             <section class="textoTestimonios">
                 <div class="quotes">
-                    <q>Fue una maravillosa sensación llegar a la cabaña y cada día seguimos disfrutando de cada vista y de los rincones. La gran sorpresa fue descubrir un pequeño arroyo en el jardín. Todo es impecable. Muy buena ubicación. Alejandro su dueño, tiene todo muy organizado y respetuoso por el cuidado del medioambiente. Super recomiendo</q>
+                    <p>Fue una maravillosa sensación llegar a la cabaña y cada día seguimos disfrutando de cada vista y de los rincones. La gran sorpresa fue descubrir un pequeño arroyo en el jardín. Todo es impecable. Muy buena ubicación. Alejandro su dueño, tiene todo muy organizado y respetuoso por el cuidado del medioambiente. Super recomiendo</p>
                     <h4>- Goga D</h4>
                 </div>
                 <div class="quotes">
-                    <q>Pasé dos maravillosas semanas en la cabaña San Francisco con mi familia desde el 2 de enero del 2022. Realmente las fotos, por mejor tomadas que estén, no le hacen justicia al lugar. El lugar y la cabaña son simplemente maravillosos. El arroyo que corre detrás de la cabaña en el jardín era nuestro lugar favorito. Tomar mate, leer o simplemente relajarse en ese lugar rodeado de un paisaje increíble, no tiene precio. Tanto Alejandro (Su dueño) como Marina y Gustavo (administradores) se mostraron solícitos y genuinamente diligentes para que nuestra estancia sea sumamente placentera. No dudo ni un instante en otorgarles 5 estrellas. Meliquina es para mí un paraíso con una belleza agreste y un estilo de vida muy ecológico con gran respeto al medioambiente. La cabaña , sus comodidades y el entorno superaron nuestras expectativas, que por las fotos e imágenes que habíamos visto ya eran altas. ¡Gracias por estas dos maravillosas semanas! ¡Seguramente volveremos!</q>
+                    <p>Pasé dos maravillosas semanas en la cabaña San Francisco con mi familia desde el 2 de enero del 2022. Realmente las fotos, por mejor tomadas que estén, no le hacen justicia al lugar. El lugar y la cabaña son simplemente maravillosos. El arroyo que corre detrás de la cabaña en el jardín era nuestro lugar favorito. Tomar mate, leer o simplemente relajarse en ese lugar rodeado de un paisaje increíble, no tiene precio. Tanto Alejandro (Su dueño) como Marina y Gustavo (administradores) se mostraron solícitos y genuinamente diligentes para que nuestra estancia sea sumamente placentera. No dudo ni un instante en otorgarles 5 estrellas. Meliquina es para mí un paraíso con una belleza agreste y un estilo de vida muy ecológico con gran respeto al medioambiente. La cabaña , sus comodidades y el entorno superaron nuestras expectativas, que por las fotos e imágenes que habíamos visto ya eran altas. ¡Gracias por estas dos maravillosas semanas! ¡Seguramente volveremos!</p>
                     <h4>- Juan C</h4>
                 </div>
                 <div class="quotes">
-                    <q>Exelente lugar, muy confortable, limpio, y unico por sus caracteristicas. Si buscas paz tranquilidad y un entorno realmente increible, el lugar sin dudas es este. Su anfitrion Alejandro, una persona q esta en todos los detalles , con mucho conocimiento de la zona siempre tiene una solucion para las dudas q se generan al momento de viajar. Un grande!!!</q>
+                    <p>Exelente lugar, muy confortable, limpio, y unico por sus caracteristicas. Si buscas paz tranquilidad y un entorno realmente increible, el lugar sin dudas es este. Su anfitrion Alejandro, una persona q esta en todos los detalles , con mucho conocimiento de la zona siempre tiene una solucion para las dudas q se generan al momento de viajar. Un grande!!!</p>
                     <h4>- Guillermo E</h4>
                 </div>
             </section>
-            <!-- testimonios de inquilinos-->
+        </section>
+        <h2 id="contacto">Contacto</h2>
+        <section class="datos">
+            <div class="contacto">
+                <h3>Redes</h3>
+                <div class="redes">
+                    <a href="https://www.instagram.com/sanfrancisco_meliquina/">
+                        <i class="bi bi-instagram iconos"><span>Instagram</span></i>
+                    </a>
+                    <a href="https://www.facebook.com/sanfranciscomeliquina">
+                        <i class="bi bi-facebook iconos"><span>Facebook</span></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=541141825036&text=Hola Alejandro, quería consultarte sobre la cabaña...">
+                        <i class="bi bi-whatsapp iconos"><span>1141825036</span></i>
+                    </a>
+                    <a href="mailto:aleeliceche@gmail.com?subject=Consulta sobre cabaña San Francisco">
+                        <i class="bi bi-envelope iconos"><span>aleeliceche@gmail.com</span></i>
+                    </a>
+                </div>
+            </div>
+            <div class="consultas">
+                <h3>Consultas</h3>
+                <div class="formulario">
+                    <form action="mailto:facupalopoli@gmail.com" method="POST">
+                        <label for="nombre">Nombre y Apellido</label>
+                        <input type="text" name="nombre" id="nombre" required placeholder="Ingrese su nombre y apellido">
+                        <label for="correo">E-mail</label>
+                        <input type="email" name="correo" id="correo" required placeholder="Ingrese su correo electronico">
+                        <label for="telefono">Nro de telefono</label>
+                        <input type="text" name="telefono" id="telefono" required placeholder="Dejenos su telefono">
+                        <label for="cantidad">Cantidad de personas</label>
+                        <input type="number" name="cantidad" id="cantidad" required placeholder="Cuantas personas habitarian la cabania?">
+                        <label for="fechadesde">Desde</label>
+                        <input type="date" name="fechadesde" id="fechadesde" required>
+                        <label for="fechahasta">Hasta</label>
+                        <input type="date" name="fechahasta" id="fechahasta" required>
+                        <input type="submit" value="Enviar consulta">
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-        <h2>Contacto</h2>
-        <h3>Escribinos</h3>
-        <!-- formulario de contacto-->
-        <h3>Nuestras redes</h3>
-        <!-- logos de redes sociales-->
         <nav>
-            <a href="">Inicio</a>
-            <a href="">La Cabaña</a>
-            <a href="">Meliquina</a>
-            <a href="">Testimonios</a>
-            <a href="">Contacto</a>
+            <a href="#home">Inicio</a>
+            <a href="#casa">La Cabaña</a>
+            <a href="#meliquina">Meliquina</a>
+            <a href="#testimonios">Testimonios</a>
+            <a href="#contacto">Contacto</a>
         </nav>
+        <div>
+            <a href="https://www.instagram.com/sanfrancisco_meliquina/">
+                <i class="bi bi-instagram iconos"></i>
+            </a>
+            <a href="https://www.facebook.com/sanfranciscomeliquina">
+                <i class="bi bi-facebook iconos"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=541141825036&text=Hola Alejandro, quería consultarte sobre la cabaña...">
+                <i class="bi bi-whatsapp iconos"></i>
+            </a>
+            <a href="mailto:aleeliceche@gmail.com?subject=Consulta sobre cabaña San Francisco">
+                <i class="bi bi-envelope iconos"></i>
+            </a>
+        </div>
         <p>Desarrollo: Facundo Palópoli</p>
     </footer>
 </body>
