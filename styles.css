@@ -12,21 +12,29 @@ body{
     background-color: #f5f6f7;
 }
 
-header nav{
+header{
     display: flex;
-    justify-content: flex-end;
-    background-color: black;
+    background-color: rgb(11, 10, 27);
     box-shadow: 1px 4px 8px #3a3a3a;
-    width: 100%;
     position: fixed;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    height: 2.5rem;
 }
 
-header nav a{
+.hamb{
+    color: beige;
+    padding: 0 30px;
+    font-size: 1.5rem;
+    display: none;
+}
+
+header a{
     text-decoration: none;
     color: beige;
-    font-size: 1.3em;
-    padding: 10px;
-    margin-right: 10px;
+    font-size: 1.3rem;
+    padding-right: 20px; 
 }
 
 .hero{
@@ -39,19 +47,18 @@ header nav a{
     justify-content: center;
 }
 
-.hero h1{
+.hero > h1{
     font-size: 3em;
     padding: 10px;
     margin-left: 10px;
 }
 
-.hero p{
+.hero > p{
     font-weight: 600;
     margin-left: 20px;
 }
 
-.cabania h2{
-    text-align: center;
+.cabania > h2{
     text-transform: uppercase;
     text-decoration-line: overline;
     margin-bottom: 20px;
@@ -59,22 +66,22 @@ header nav a{
 }
 
 .cabania{
-    margin: 50px auto;
-    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .fotosCabania{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    width: 75%;
 }
 
 .fotosCabania img{
     width: 49%;
     border-radius: 5px;
     margin: 2px;
-    border: 5px;
-    border-color: black;
+    
 }
 
 .cita{
@@ -82,7 +89,7 @@ header nav a{
     background-size: cover;
     background-position: center;
     background-color: black;
-    height: 400px;
+    padding: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -139,12 +146,9 @@ header nav a{
     width: 49%;
     border-radius: 5px;
     margin: 2px;
-    border: 5px;
-    border-color: black;
 }
 
-.testimonios h2{
-    text-align: center;
+.testimonios > h2{
     text-transform: uppercase;
     text-decoration-line: overline;
     margin-bottom: 20px;
@@ -152,26 +156,28 @@ header nav a{
 }
 
 .testimonios{
-    margin: 50px auto 50px auto;
-    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .textoTestimonios{
     display: flex;
-    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 75%;
     justify-content: space-between;
 }
 
 .quotes{
-    width: 30%; 
+    width: 30%;
 }
 
-.quotes p{
+.quotes > p{
     text-align: justify;
 }
 
 h4{
-    margin-top: 10px;
+    padding: 5px 0 10px 0;
 }
 
 .datos{
@@ -256,12 +262,11 @@ h2{
 }
 
 footer{
-    height: 150px;
-    background-color: black;
-    padding: 30px;
+    background-color: rgb(11, 10, 27);
+    padding: 20px;
 }
 
-footer nav{
+footer > nav{
     display: flex;
     justify-content: center;
     gap: 3%;
@@ -278,7 +283,7 @@ footer p{
     color: beige;
 }
 
-footer div{
+footer > div{
     display: flex;
     justify-content: center;
     gap: 5%;
@@ -287,4 +292,39 @@ footer div{
 footer p{
     text-align: center;
     margin-top: 30px;
+}
+
+@media (max-width: 600px){
+
+    .fotosCabania > img{
+        flex-basis: 100%;
+    }
+
+    header > nav{
+        display: none;
+    }
+
+    header{
+        justify-content: center;
+    }
+
+    .hamb{
+        display: block;
+    }
+
+    footer > nav{
+        display: none;
+    }
+
+    footer .iconos{
+        font-size: 1.5rem;
+    }
+
+    .textoTestimonios{
+        flex-wrap: wrap;
+    }
+
+    .quotes{
+        flex-basis: 100%;
+    }
 }
