@@ -51,11 +51,13 @@ header a{
     font-size: 3em;
     padding: 10px;
     margin-left: 10px;
+    text-shadow: 3px 3px rgba(53, 82, 66, 0.9);
 }
 
 .hero > p{
     font-weight: 600;
     margin-left: 20px;
+    text-shadow: 2px 2px rgba(53, 82, 66, 0.9);
 }
 
 .cabania > h2{
@@ -124,8 +126,9 @@ header a{
 }
 
 .exteriores{
-    margin: 50px auto 50px auto;
-    width: 75%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .exteriores h2{
@@ -139,7 +142,7 @@ header a{
 .fotosExteriores{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    width: 75%;
 }
 
 .fotosExteriores img{
@@ -296,9 +299,7 @@ footer p{
 
 @media (max-width: 600px){
 
-    .fotosCabania > img{
-        flex-basis: 100%;
-    }
+    
 
     header > nav{
         display: none;
@@ -310,6 +311,30 @@ footer p{
 
     .hamb{
         display: block;
+    }
+
+    .fotosCabania > img{
+        flex-basis: 100%;
+    }
+
+    .cajaCita{
+        flex-basis: 70%;
+    }
+
+    .comillas{
+        font-size: 2rem;
+    }
+
+    .cita p{
+        font-size: 1.2rem;
+    }
+
+    .cita h3{
+        font-size: 1rem;
+    }
+
+    .fotosExteriores > img{
+        flex-basis: 100%;
     }
 
     footer > nav{
@@ -327,4 +352,6 @@ footer p{
     .quotes{
         flex-basis: 100%;
     }
+
+    
 }
